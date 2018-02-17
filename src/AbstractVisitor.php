@@ -36,11 +36,6 @@ abstract class AbstractVisitor
         $this->accessor = $accessorStrategy ?: new DefaultAccessorStrategy();
     }
 
-    public function getNamingStrategy()
-    {
-        return $this->namingStrategy;
-    }
-
     public function prepare($data)
     {
         return $data;
